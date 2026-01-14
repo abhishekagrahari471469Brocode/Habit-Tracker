@@ -2,19 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Daily Planner</title>
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2ecc71">
+  <title>Student Habit Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
+<header>
+  <h1>Student Habit Planner</h1>
+  <p>Tap a habit to mark it complete!</p>
+  <button id="resetBtn">Reset All Habits</button>
+</header>
 
-  <div class="container">
-    <h1>Student Daily Planner</h1>
-    <p class="subtitle">Review your habits every day</p>
 
-    <ul id="habitList"></ul>
-  </div>
+  <main>
+    <div class="habit-block" data-id="exercise">
+      <div class="icon">💪</div>
+      <div class="habit-text">
+        <h3>Exercise</h3>
+        <p>Health first, everything second.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="study">
+      <div class="icon">📚</div>
+      <div class="habit-text">
+        <h3>Study with focus</h3>
+        <p>Consistency beats intelligence.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="revise">
+      <div class="icon">📝</div>
+      <div class="habit-text">
+        <h3>Revise lessons</h3>
+        <p>Revision turns effort into mastery.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="english">
+      <div class="icon">🗣️</div>
+      <div class="habit-text">
+        <h3>Practice English</h3>
+        <p>Your words decide your world.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="read">
+      <div class="icon">📖</div>
+      <div class="habit-text">
+        <h3>Read 2 pages</h3>
+        <p>Readers become leaders.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="mobile">
+      <div class="icon">📵</div>
+      <div class="habit-text">
+        <h3>Limit mobile usage</h3>
+        <p>Control your phone, or it will control you.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="skill">
+      <div class="icon">🎯</div>
+      <div class="habit-text">
+        <h3>Learn one skill</h3>
+        <p>Skills give freedom.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+    <div class="habit-block" data-id="reflection">
+      <div class="icon">🪞</div>
+      <div class="habit-text">
+        <h3>Self-reflection</h3>
+        <p>Self-reflection is self-correction.</p>
+      </div>
+      <div class="checkmark">✔</div>
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
